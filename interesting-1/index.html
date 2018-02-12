@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- layout.ejs-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website for A-RSnippet Hexo Theme">
+    <meta name="author" content="Yingjie Hu">
+    <meta name="keyword" content="hexo, hexo theme, A-RSnippet, responsive, bootstrap">
+    <link rel="canonical" href="http://yoursite.com/interesting-1/">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="A-RSnippet &lt;a class=&#34;github-button&#34; href=&#34;https://github.com/huyingjie/hexo-theme-A-RSnippet&#34; data-icon=&#34;octicon-star&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star huyingjie/hexo-theme-A-RSnippet on GitHub&#34;&gt;Star&lt;/a&gt;" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <title>
+        
+        interesting｜An A-RSnippet Hexo Theme
+        
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="/css/highlight.css">
+    
+
+    
+      <script id="dsq-count-scr" src="//hexo-a-rsnippet.disqus.com/count.js" async></script>
+    
+
+
+    
+      <meta name="google-site-verification" content="wtCjI-zcpr2FYwWS3sI4OWzMK9e7VomDrZyxpVUUIng" />
+    
+
+    
+
+    
+
+
+    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-38355881-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- user customization -->
+    <link rel="stylesheet" href="/css/arsnippet.css">
+    <script src="/js/arsnippet.css.js"></script>
+</head>
+
+<style>
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<header>
+  <nav class="navbar navbar-default header-navbar" id="nav-top" data-ispost = "true" data-istags="false" data-ishome = "false" >
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" aria-expanded="false"  data-target="#website_navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand animated pulse">
+          <a class="brand-logo" href="/">
+            A-RSnippet <a class="github-button" href="https://github.com/huyingjie/hexo-theme-A-RSnippet" data-icon="octicon-star" data-show-count="true" aria-label="Star huyingjie/hexo-theme-A-RSnippet on GitHub">Star</a>
+          </a>
+        </span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="website_navbar">
+          <ul class="nav navbar-nav navbar-right">
+              
+                <li>
+                  <a href="/">home</a>
+                </li>
+              
+                <li>
+                  <a href="/tutorial/">Tutorial</a>
+                </li>
+              
+                <li>
+                  <a href="/leetcode-category/">LeetCode-category</a>
+                </li>
+              
+                <li>
+                  <a href="/leetcode-tag/">LeetCode-tag</a>
+                </li>
+              
+                <li>
+                  <a href="/archives/">archives</a>
+                </li>
+              
+                <li>
+                  <a href="/tags/">tags</a>
+                </li>
+              
+                <li>
+                  <a href="/portfolio-slim/">projects</a>
+                </li>
+              
+                <li>
+                  <a href="/support/">support</a>
+                </li>
+              
+                <li>
+                  <a href="/atom.xml">RSS</a>
+                </li>
+              
+          </ul>
+      </div>
+  </nav>
+
+
+  
+    <style>
+       .intro-header {
+          background-image: url('/img/sky-clouds-moon-horizon.jpg?h=350&amp;auto=compress&amp;cs=tinysrgb');
+      }
+    </style>
+
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                    <div class="site-heading">
+                        <h1>interesting</h1>
+                        
+                        
+                          <span class="meta">
+                               <span class="meta-item">Author: Yingjie Hu</span>
+                               <span class="meta-item">Date: Feb 12, 2018</span>
+                               
+                                 <span class="meta-item">Updated On: Feb 12, 2018</span>
+                               
+                          </span>
+                          <div class="tags text-center">
+                              Categories: 
+                          </div>
+                          <div class="tags text-center">
+                              Tags: 
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</header>
+
+
+<!-- Main Content -->
+<!-- post.ejs -->
+<article>
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-1 col-sm-9">
+          
+            <div class="text-center"><div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5272bc2a7b3c1ddc" async = "async" ></script>
+</div>
+</div><hr>
+          
+          <div class="subscribe"><a href="http://eepurl.com/dh6iCD" target="_blank">Get Updated for Each Release!</a></div><p>
+          <h1 id="新interesting"><a href="#新interesting" class="headerlink" title="新interesting"></a>新interesting</h1><h3 id="从谷歌连接抓包："><a href="#从谷歌连接抓包：" class="headerlink" title="从谷歌连接抓包："></a>从谷歌连接抓包：</h3><p>wget –no-check-certificate ‘<a href="https://docs.google.com/uc?export=download&amp;id=FILEID" target="_blank" rel="noopener">https://docs.google.com/uc?export=download&amp;id=FILEID</a>‘ -O FILENAME###  </p>
+<h3 id="Docker-配置环境："><a href="#Docker-配置环境：" class="headerlink" title="Docker 配置环境："></a>Docker 配置环境：</h3><p><a href="https://segmentfault.com/a/1190000006843830" target="_blank" rel="noopener">https://segmentfault.com/a/1190000006843830</a></p>
+<h3 id="Java-Ubuntu-安装"><a href="#Java-Ubuntu-安装" class="headerlink" title="Java(Ubuntu) 安装"></a>Java(Ubuntu) 安装</h3><p><a href="http://www.cnblogs.com/a2211009/p/4265225.html" target="_blank" rel="noopener">http://www.cnblogs.com/a2211009/p/4265225.html</a></p>
+<h3 id="eclipse的联想"><a href="#eclipse的联想" class="headerlink" title="eclipse的联想"></a>eclipse的联想</h3><p><a href="https://jingyan.baidu.com/article/fb48e8be0e6e626e622e1483.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/fb48e8be0e6e626e622e1483.html</a></p>
+<h3 id="JAVA-关键词-synchronizend"><a href="#JAVA-关键词-synchronizend" class="headerlink" title="JAVA 关键词 synchronizend"></a>JAVA 关键词 synchronizend</h3><p>防止多线程出现静态变量更改的误差。</p>
+<h3 id="重置mac"><a href="#重置mac" class="headerlink" title="重置mac"></a>重置mac</h3><p><a href="https://www.imore.com/how-to-prepare-mac-for-sale#2" target="_blank" rel="noopener">https://www.imore.com/how-to-prepare-mac-for-sale#2</a></p>
+<h3 id="spring-架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。"><a href="#spring-架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。" class="headerlink" title="spring 架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。"></a>spring 架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。</h3><h3 id="mac-软件打开权限"><a href="#mac-软件打开权限" class="headerlink" title="mac 软件打开权限"></a>mac 软件打开权限</h3><p>sudo spctl –master-disable</p>
+<h3 id="三个点顺时针和逆时针的判断："><a href="#三个点顺时针和逆时针的判断：" class="headerlink" title="三个点顺时针和逆时针的判断："></a>三个点顺时针和逆时针的判断：</h3><p><a href="http://www.geeksforgeeks.org/orientation-3-ordered-points/" target="_blank" rel="noopener">http://www.geeksforgeeks.org/orientation-3-ordered-points/</a></p>
+<h3 id="为什么不行在java里运行还有”-gt-”的命令"><a href="#为什么不行在java里运行还有”-gt-”的命令" class="headerlink" title="为什么不行在java里运行还有”&gt;”的命令"></a>为什么不行在java里运行还有”&gt;”的命令</h3><p>The metacharacter “&gt;” is implemented by the shell; no shell is involved in running a program with Runtime.exec() so the last two arguments to mysqldump are garbage. Use the array argument form of Runtime.exec(); pass “/bin/sh” as the first argument, “-c” as the second, and your command line as the third; that way the shell metacharacters will be interpreted by /bin/sh.</p>
+<h3 id="改变java环境"><a href="#改变java环境" class="headerlink" title="改变java环境"></a>改变java环境</h3><h2 id="改变-sql-的AUTO-INCREMENT"><a href="#改变-sql-的AUTO-INCREMENT" class="headerlink" title="改变 sql 的AUTO_INCREMENT"></a>改变 sql 的AUTO_INCREMENT</h2><p>alter table <strong> auto_increment=**</strong></p>
+<h2 id="关于truncate-重置表格（真尼玛危险-）"><a href="#关于truncate-重置表格（真尼玛危险-）" class="headerlink" title="关于truncate(重置表格（真尼玛危险　）)"></a>关于truncate(重置表格（真尼玛危险　）)</h2><p><a href="https://en.wikipedia.org/wiki/Truncate_(SQL" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Truncate_(SQL</a>)</p>
+<p>Typically, TRUNCATE TABLE quickly deletes all records in a table by deallocating the data pages used by the table. This reduces the resource overhead of logging the deletions, as well as the number of locks acquired. Records removed this way cannot be restored in a rollback operation. Two notable exceptions to this rule are the implementations found in PostgreSQL and Microsoft SQL Server, both of which allow TRUNCATE TABLE statements to be committed or rolled back transactionally.</p>
+<h2 id="Spring-retrieve-data-by-hibernate"><a href="#Spring-retrieve-data-by-hibernate" class="headerlink" title="Spring retrieve data by hibernate"></a>Spring retrieve data by hibernate</h2><p>session.createQuery(“from <strong><strong> where </strong></strong>“).getResultList();</p>
+<h2 id="log4j-api"><a href="#log4j-api" class="headerlink" title="log4j api"></a>log4j api</h2><p><a href="https://www.tutorialspoint.com/log4j/" target="_blank" rel="noopener">https://www.tutorialspoint.com/log4j/</a></p>
+<h2 id="nosql与sql"><a href="#nosql与sql" class="headerlink" title="nosql与sql"></a>nosql与sql</h2><h3 id="strength："><a href="#strength：" class="headerlink" title="strength："></a>strength：</h3><p>Less work overhead for one-to-many relationships</p>
+<p>Less work overhead for adding new data to an entity</p>
+<p>NoSQL typically offers better performance and speed</p>
+<p>NoSQL tends to use and require a lot of RAM, so be cautious</p>
+<h3 id="drawback"><a href="#drawback" class="headerlink" title="drawback"></a>drawback</h3><p>Disk space consumption: MongoDB tends to take up a lot of space in comparison to the amount of data. There are some solutions to this problem (TokuMX, which will be discussed in a later blog), but MongoDB itself isn’t the most space-efficient solutions.</p>
+<p>Document size restriction: The max size of a MongoDB document is 16MB. This was a particularly complex issue to work around if your document is a company with an array of subdocuments containing information on employees. If that list gets too large, you will have to split the company document and then re-connect them with an aggregation pipeline.</p>
+<p>Pagination using skips and limits have very bad performance: Say your company has 10,000 people subdocuments. To skip the first 9000 is a serious performance hit as it seems to run your query parameters against each row. This is a completely ineffective method for paginating large datasets, but there are some workarounds, such as using a $gte parameter on the last page’s item ID.</p>
+<p>##Get and Post</p>
+<h3 id="get"><a href="#get" class="headerlink" title="get:"></a>get:</h3><p> Request data from given resouce</p>
+<p>Good for debugging</p>
+<p>Bookmark or email URL</p>
+<p>Limitations on data length</p>
+<p>Internet Explorer also has a maximum path length of 2,048 characters. This limit applies to both POST request and GET request URLs.If you are using the GET method, you are limited to a maximum of 2,048 characters, minus the number of characters in the actual path</p>
+<h3 id="post"><a href="#post" class="headerlink" title="post:"></a>post:</h3><p>submits data to given resource</p>
+<p>cann’t bookmark or email url</p>
+<p>no limitations on data length</p>
+<p>can also send binary data </p>
+<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><h3 id="Spring-AOP"><a href="#Spring-AOP" class="headerlink" title="Spring AOP"></a>Spring AOP</h3><h3 id="Spring-AOP-is-lightweight-AOP-implementation"><a href="#Spring-AOP-is-lightweight-AOP-implementation" class="headerlink" title="Spring AOP is lightweight AOP implementation"></a>Spring AOP is lightweight AOP implementation</h3><h4 id="Advantage"><a href="#Advantage" class="headerlink" title="Advantage:"></a>Advantage:</h4><p>Simpler to use than AspectJ</p>
+<p>Uses Proxy pattern</p>
+<p>Can migrate to AspectJ when using @Aspect annotation</p>
+<h4 id="disadvantage"><a href="#disadvantage" class="headerlink" title="disadvantage"></a>disadvantage</h4><p>Only supports method-level join points</p>
+<p>Can only apply aspects to beans created by Spring add context</p>
+<p>Minor performance cost for aspect exeution(run-time weaving)</p>
+<h3 id="AspectJ-original-aop-framework"><a href="#AspectJ-original-aop-framework" class="headerlink" title="AspectJ original aop framework"></a>AspectJ original aop framework</h3><h4 id="Advantage-1"><a href="#Advantage-1" class="headerlink" title="Advantage"></a>Advantage</h4><p>Support all join points</p>
+<p>Works with any POJO. not just beans from context</p>
+<p>Faster performance compared to Spring AOP</p>
+<p>Complete AOP support</p>
+<h4 id="disvantage"><a href="#disvantage" class="headerlink" title="disvantage"></a>disvantage</h4><p>Compile-time weaving requires extra compilation step </p>
+<p>AspectJ pointcut syntax can become complex</p>
+<h2 id="WildCard"><a href="#WildCard" class="headerlink" title="WildCard"></a>WildCard</h2><p>通配符</p>
+<h2 id="http缓存机制"><a href="#http缓存机制" class="headerlink" title="http缓存机制"></a>http缓存机制</h2><p><a href="http://www.cnblogs.com/vajoy/p/5341664.html" target="_blank" rel="noopener">http://www.cnblogs.com/vajoy/p/5341664.html</a></p>
+<h2 id="数据结构表"><a href="#数据结构表" class="headerlink" title="数据结构表"></a>数据结构表</h2><p><a href="http://bigocheatsheet.com/" target="_blank" rel="noopener">http://bigocheatsheet.com/</a></p>
+
+          
+            <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a> <a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a> <a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
+          
+          <hr>
+          <ul class="pager">
+              
+              
+              <li class="next">
+                  <a href="/hello-world/" data-toggle="tooltip" data-placement="top"
+                     title="Hello World">Next Post&rarr;</a>
+              </li>
+              
+          </ul>
+        
+  <br>
+  
+  <!-- disqus start -->
+  <div class="comment">
+    <div id="disqus_thread"  class="disqus-thread"></div>
+      <script>
+      var disqus_shortname = 'hexo-a-rsnippet';
+      
+      var disqus_url = 'http://yoursite.com/interesting-1/';
+      
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <!-- disqus end -->
+  
+
+  
+  </div>
+
+
+        
+  <div class="hidden-xs col-sm-3 toc-col">
+    <div class="toc-wrap">
+        Table of Contents
+        
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#新interesting"><span class="toc-number">1.</span> <span class="toc-text">新interesting</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#从谷歌连接抓包："><span class="toc-number">1.0.1.</span> <span class="toc-text">从谷歌连接抓包：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-配置环境："><span class="toc-number">1.0.2.</span> <span class="toc-text">Docker 配置环境：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-Ubuntu-安装"><span class="toc-number">1.0.3.</span> <span class="toc-text">Java(Ubuntu) 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eclipse的联想"><span class="toc-number">1.0.4.</span> <span class="toc-text">eclipse的联想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JAVA-关键词-synchronizend"><span class="toc-number">1.0.5.</span> <span class="toc-text">JAVA 关键词 synchronizend</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重置mac"><span class="toc-number">1.0.6.</span> <span class="toc-text">重置mac</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#spring-架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。"><span class="toc-number">1.0.7.</span> <span class="toc-text">spring 架构，从数据层到最高层，这和网络分层比起来也非常类似。在计算机这个领域，确实是很多地方都是类似的。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mac-软件打开权限"><span class="toc-number">1.0.8.</span> <span class="toc-text">mac 软件打开权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三个点顺时针和逆时针的判断："><span class="toc-number">1.0.9.</span> <span class="toc-text">三个点顺时针和逆时针的判断：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为什么不行在java里运行还有”-gt-”的命令"><span class="toc-number">1.0.10.</span> <span class="toc-text">为什么不行在java里运行还有”&gt;”的命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#改变java环境"><span class="toc-number">1.0.11.</span> <span class="toc-text">改变java环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#改变-sql-的AUTO-INCREMENT"><span class="toc-number">1.1.</span> <span class="toc-text">改变 sql 的AUTO_INCREMENT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于truncate-重置表格（真尼玛危险-）"><span class="toc-number">1.2.</span> <span class="toc-text">关于truncate(重置表格（真尼玛危险　）)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-retrieve-data-by-hibernate"><span class="toc-number">1.3.</span> <span class="toc-text">Spring retrieve data by hibernate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#log4j-api"><span class="toc-number">1.4.</span> <span class="toc-text">log4j api</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nosql与sql"><span class="toc-number">1.5.</span> <span class="toc-text">nosql与sql</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#strength："><span class="toc-number">1.5.1.</span> <span class="toc-text">strength：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#drawback"><span class="toc-number">1.5.2.</span> <span class="toc-text">drawback</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get"><span class="toc-number">1.5.3.</span> <span class="toc-text">get:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#post"><span class="toc-number">1.5.4.</span> <span class="toc-text">post:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOP"><span class="toc-number">1.6.</span> <span class="toc-text">AOP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-AOP"><span class="toc-number">1.6.1.</span> <span class="toc-text">Spring AOP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-AOP-is-lightweight-AOP-implementation"><span class="toc-number">1.6.2.</span> <span class="toc-text">Spring AOP is lightweight AOP implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Advantage"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">Advantage:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#disadvantage"><span class="toc-number">1.6.2.2.</span> <span class="toc-text">disadvantage</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AspectJ-original-aop-framework"><span class="toc-number">1.6.3.</span> <span class="toc-text">AspectJ original aop framework</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Advantage-1"><span class="toc-number">1.6.3.1.</span> <span class="toc-text">Advantage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#disvantage"><span class="toc-number">1.6.3.2.</span> <span class="toc-text">disvantage</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WildCard"><span class="toc-number">1.7.</span> <span class="toc-text">WildCard</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http缓存机制"><span class="toc-number">1.8.</span> <span class="toc-text">http缓存机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构表"><span class="toc-number">1.9.</span> <span class="toc-text">数据结构表</span></a></li></ol></li></ol>
+        
+    </div>
+  </div>
+
+
+      </div>
+  </div>
+</article>
+
+<!-- Footer -->
+<!-- footer.ejs -->
+<footer>
+    <div class="text-center">
+      <ul class="list-inline">
+          
+              <li>
+                  <a href="/atom.xml" target="_blank">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+          
+              <li>
+                  <a target="_blank" href="https://twitter.com/yingjieYJH">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+          
+
+          
+
+          
+
+          
+              <li>
+                  <a target="_blank"  href="https://github.com/huyingjie">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+
+          
+
+          
+
+      </ul>
+     <div class="text-muted copyright">
+            &copy;
+            
+            2015 - 2018
+            
+            
+              <i class="fa fa-heart"></i>
+            
+            Yingjie Hu
+        <br>
+          
+              Powered by <a target="_blank" href="https://hexo.io">Hexo</a>
+          
+          
+            |
+          
+          
+              Theme - <a href="https://github.com/huyingjie/hexo-theme-A-RSnippet" target="_blank">A-RSnippet</a> v0.1.0
+          
+          
+      </div>
+    </div>
+</footer>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+</body>
+
+</html>
